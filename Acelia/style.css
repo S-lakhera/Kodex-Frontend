@@ -1,0 +1,244 @@
+@font-face {
+    font-family: Inter;
+    src: url(./Assets/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+  font-family: Inter-bold;
+  src: url(./Assets/static/Inter_18pt-Medium.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+  font-family: Inter;
+  background-color: rgb(0, 29, 33);
+  color: whitesmoke;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 20px 50px;
+    position: sticky;
+}
+
+#left{
+  display: flex;
+  /* height: 80px; */
+  width: 60%;
+}
+
+#left img{
+    height: 40px;
+}
+
+#left ul{
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
+    font-size: 15px;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+#right{
+  position: absolute;
+  right: 10px;
+  padding-right: 20px;
+}
+
+#right button{
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+#page1{
+  height: 125%;
+  width: 100%;
+}
+
+.hero-text{
+  width: 700px;
+  position: relative;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  justify-content: center;
+}
+
+.hero-text h1{
+  font-size: 50px;
+  font-weight: 100;
+  font-family: Inter-bold;
+  /* margin-bottom: 30px; */
+}
+
+.hero-text p{
+  text-align: center;
+  width: 500px;
+  font-size: 13px;
+  color: rgb(153, 152, 152);
+  margin-left: 70px;  
+  padding-left: 50px;
+}
+
+.hero-image {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-top: 80px;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.hero-image img{
+  width: 30%;
+  border-radius: 20px;
+}
+
+#page2{
+  height: 100%;
+  width: 100%;
+  background-color: #fffffff0;
+  color: black;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page2 h7{
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+h7 i{
+  font-size: 10px;
+  padding-bottom: 10px !important;
+}
+
+#page2 div{
+  text-align: start;
+  width: 75vw;
+}
+
+#page2 div p{
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+.cards-container{
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+.cards-container .card{
+  height: 100px;
+  width: 20%;
+  border-left: 0.5px solid rgb(198, 198, 198);
+  padding: 10px;
+}
+
+.cards-container .card h1{
+  font-weight: 400;
+}
+.cards-container .card p{
+  font-size: 14px !important;
+  color: rgb(79, 79, 79);
+}
+
+.icons{
+  height: 100px;width: 100px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 12%;
+}
+
+.icons img{
+  height: 30px;
+
+}
+
+#page3{
+  /* height: 100%; */
+  width: 100%;
+  background-color: #ffffff;
+  color: black;
+  padding: 50px;
+}
+
+#page3 h7{
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+h7 i{
+  font-size: 10px;
+  padding-bottom: 10px !important;
+}
+
+#text{
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.container{
+  display: flex;
+  height: 70%;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.container .card{
+  border-radius: 10px;
+  width: 32%;
+}
+
+.card img{
+  width: 100%;
+  height: 90%;
+  border-radius: 20px;
+}
+
+.card .layer{
+  height: 60px;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  bottom: 20%;
+  color: #ffffff;
+  padding: 15px;
+  /* background-color: rgba(0, 0, 0, 0.134); */
+  border-radius: 20px;
+  
+}
+
+.layer h3{
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.layer p{
+  font-weight: 300;
+  font-size: 14px;
+}
