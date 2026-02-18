@@ -46,6 +46,12 @@ body{
     color: rgb(165, 165, 165);
 }
 
+#logo{
+    height: 180px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    margin-right: 20px;
+}
+
 img{
     width: 150px;
     margin-right: 20px;
