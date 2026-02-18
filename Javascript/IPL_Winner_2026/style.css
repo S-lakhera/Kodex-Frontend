@@ -25,28 +25,45 @@ body{
 .card{
     display: flex;
     align-items: center;
-    background-color: #1e1e1e;
+    background-color: #191919;
     padding: 20px;
-    width: 450px;
+    width: 550px;
+    height: 240px;
     border: 2px solid transparent;
     transition: all 0.3s ease;
+    visibility: hidden;
+}
+
+#details h1{
+    position: relative;
+    bottom: 20px;
+}
+
+#details p{
+    line-height: 25px;
+    /* font-size: 20px; */
+    font-weight: 500;
+    color: rgb(165, 165, 165);
 }
 
 img{
-    width: 120px;
+    width: 150px;
     margin-right: 20px;
 }
 
 button{
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 15px 50px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition-duration: 0.1s;
-    margin-top: 10px;
-    background-color: rgb(123, 231, 169);
+    margin-bottom: 30px;
+    background-color: crimson;
     border: 0.5px solid red;
+    color: aliceblue;
 }
 
 button:active{

@@ -21,7 +21,7 @@ var teams = [
         name: 'RCB',
         fullName: 'Royal Challengers Bengaluru',
         captain: 'Rajat Patidar',
-        colors: ['#2B2A29', '#EC1C24'], // Black and Red
+        colors: ['#EC1C24','#716b68'], // Black and Red
         titles: [2025],
         homeGround: 'M. Chinnaswamy Stadium',
         logo: './images/rcb.png'
@@ -39,7 +39,7 @@ var teams = [
         name: 'SRH',
         fullName: 'Sunrisers Hyderabad',
         captain: 'Pat Cummins',
-        colors: ['#FF822E', '#000000'], // Orange and Black
+        colors: ['#FF822E', 'white'], // Orange and Black
         titles: [2016],
         homeGround: 'Rajiv Gandhi Intl. Stadium',
         logo: './images/srh.png'
@@ -95,13 +95,22 @@ var card = document.querySelector('.card')
 var logo = document.querySelector('#logo')
 var details = document.querySelector('#details')
 var btn = document.querySelector('button')
+var img = document.querySelector('img')
 
 
 btn.addEventListener('click', function() {
+    card.style.visibility = 'visible'
     let random = Math.floor(Math.random()*teams.length)
     let winner = teams[random]
 
-    let img = document.createElement('img')
     img.setAttribute('src',winner.logo)
-    logo.append(img)
+
+    document.querySelector('#teamname').textContent = winner.fullName
+    document.querySelector('#captain').textContent = winner.captain
+    document.querySelector('#ground').textContent = winner.homeGround
+    document.querySelector('#titles').textContent = winner.titles
+    
+    document.querySelector('#teamname').style.color = winner.colors[1]
+    card.style.borderColor = winner.colors[0];
+    card.style.boxShadow = `0 0 20px ${winner.colors[0]}`
 })
