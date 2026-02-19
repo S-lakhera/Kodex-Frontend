@@ -8,11 +8,11 @@ var img2 = img.cloneNode(true);
 imgContainer.append(img)
 imgContainer.append(img2)
 
-body.append(imgContainer)
+body.append(imgContainer);
 
 var resultBox = document.createElement('div')
 resultBox.setAttribute('id','resultBox')
-body.append(resultBox)
+body.append(resultBox);
 
 var result1;
 img.addEventListener('click', function() {
