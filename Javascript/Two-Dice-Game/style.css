@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+#imgContainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 40px;
+    gap: 100px;
+    padding: 50px;
+    border: 0.25px dashed white;
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+img{
+    height: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+img:active{
+    scale: 0.9;
+    rotate: 360deg;
+}
+
+#resultBox, #msgBox{
+    display: flex;
+    background-color: #1d1d1d;
+    height: 65px;
+    width: 40%;
+    border-radius: 20px;
+    border: 0.5px solid white;
+    justify-content: space-between;
+    padding: 20px 60px;
+    color: whitesmoke;
+    /* margin-bottom: 20px; */
+}
+
+#msgBox{
+    justify-content: center;
+    width: 30%;
+    transition: 0.35s;
+}
+
+button{
+    background-color: #2a2a2a;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: 0.5px solid white;
+    font-size: larger;
+    font-weight: 700;
+    transition: 0.5s;
+}
+button:active{
+    scale: 0.9;
+}
