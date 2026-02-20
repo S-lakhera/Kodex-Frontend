@@ -17,6 +17,8 @@ body{
     align-items: center;
     flex-direction: column;
     font-weight: 600;
+    background-image: url(./images/bg2.jpg);
+    background-size: cover;
 }
 
 #imgContainer{
@@ -26,9 +28,9 @@ body{
     margin: 40px;
     gap: 100px;
     padding: 50px;
-    border: 0.25px dashed white;
     border-radius: 20px;
     transition: 0.25s;
+    background-color: #0c0c0c4b;
 }
 
 img{
@@ -43,11 +45,10 @@ img:active{
 
 #resultBox, #msgBox{
     display: flex;
-    background-color: #1d1d1d;
+    background-color: #1d1d1d3e;
     height: 65px;
     width: 40%;
     border-radius: 20px;
-    border: 0.5px solid white;
     justify-content: space-between;
     padding: 20px 60px;
     color: whitesmoke;
@@ -55,13 +56,15 @@ img:active{
 }
 
 #msgBox{
+    border: 0.5px solid white;
     justify-content: center;
+    background-color: #1d1d1db6;
     width: 30%;
     transition: 0.35s;
 }
 
 button{
-    background-color: #2a2a2a;
+    background-color: #2a2a2a66;
     color: white;
     padding: 15px 30px;
     cursor: pointer;
