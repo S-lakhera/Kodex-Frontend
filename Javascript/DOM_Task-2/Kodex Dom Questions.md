@@ -32,3 +32,7 @@
    (Use createElement, appendChild, events)
 
 10. Create an object representing a user. Write a function that **clones the object without using spread**, updates one property, and returns the new object.
+
+Virtual Piano
+Music Player
+MouseFollower with mouseenter and mouseleave
