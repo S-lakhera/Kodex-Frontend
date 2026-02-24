@@ -1,4 +1,6 @@
+const nav = document.querySelector('nav')
 let audio = new Audio()
+let buttons = document.querySelectorAll('.buttons div')
 
 document.addEventListener('keydown',(e)=> {
     // console.log(e.code);
@@ -57,7 +59,7 @@ document.addEventListener('keydown',(e)=> {
     
 })
 
-let buttons = document.querySelectorAll('.buttons div')
+
 
 buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -66,3 +68,18 @@ buttons.forEach((btn) => {
     })
     
 } )
+
+let navbar = true;
+document.addEventListener('wheel', (e) => {
+    console.log(e.deltaY);
+    
+    if(e.deltaY > 0)
+    {
+        nav.style.transform = 'translateY(-100%)'
+        navbar = false;
+    }
+    if(navbar == false && e.deltaY< -1){
+        nav.style.transform = 'translateY(0%)'
+        navbar = true;
+    }
+})
