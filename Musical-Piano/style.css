@@ -65,8 +65,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  background: url('https://plus.unsplash.com/premium_photo-1664102191953-7d46580982df?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  gap: 4px;
   
 }
 
@@ -75,10 +74,24 @@ ul{
   height: 350px;
   width: 6%;
   justify-content: center;
-  background-color: #ffffffaa;
+  background-color: #f5eec8fc;
   color: #000000;
   align-items: flex-end;
   padding: 30px;
-  border-radius: 20px;
-  border: 2px solid black;
+  border-radius: 0 0 20px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+#s, #f, #h, #k{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border-color: rgb(235, 232, 173);
+  width: 4%;
+  height: 320px;
+  margin-bottom: 30px;
+}
+
+.buttons div:active{
+  scale: 0.98;
 }

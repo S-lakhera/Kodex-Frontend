@@ -56,3 +56,13 @@ document.addEventListener('keydown',(e)=> {
     }
     
 })
+
+let buttons = document.querySelectorAll('.buttons div')
+
+buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        audio.src = './sounds/fahhhhh.mp3'
+        audio.play()
+    })
+    
+} )
