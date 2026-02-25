@@ -2,7 +2,7 @@ const container = document.querySelector('.container')
 // let cellSize = 40
 const rows = Math.floor(container.clientHeight/45);
 const cols = Math.floor(container.clientWidth/45);
-console.log("Cloumns = "+cols);
+// console.log("Cloumns = "+cols);
 
 const totalCells = rows*cols;
 
@@ -37,8 +37,7 @@ container.addEventListener('mousemove', (e) => {
     if(index+cols <= totalCells){
         cells[index+cols].classList.add("fade")
     }
-    
-    
+
     setTimeout(() => {
         cell.classList.remove("active");
         cells[index-1].classList.remove("fade")
