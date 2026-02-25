@@ -3,7 +3,6 @@ let audio = new Audio()
 let buttons = document.querySelectorAll('.buttons div')
 
 document.addEventListener('keydown',(e)=> {
-    // console.log(e.code);
     if(e.code === 'Space')
     {
         audio.src = './sounds/51.mp3'
@@ -71,8 +70,6 @@ buttons.forEach((btn) => {
 
 let navbar = true;
 document.addEventListener('wheel', (e) => {
-    console.log(e.deltaY);
-    
     if(e.deltaY > 0)
     {
         nav.style.transform = 'translateY(-100%)'
