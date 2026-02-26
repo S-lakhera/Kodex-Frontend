@@ -67,10 +67,11 @@ nav{
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    animation: fadeIn 0.3s ease;
 }
 
 .modal {
-    position: relative; /* For close button positioning */
+    position: relative;
     max-width: 850px;
     width: 90%;
     background: #111;

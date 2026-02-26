@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="brand">
+            <h1>T<span>OYO</span></h1>
+            <p>Sachche Pyar ki Nishani</p>
+        </div>
+        <div class="right">
+            <button>Add New Listing</button>
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form">
+            <form>
+                <label for="imageUrl">Image Url :
+                <input required type="text" id="imageUrl" placeholder="Image Url"></label>
+
+                <label for="title">Title :
+                <input required type="text" id="title" placeholder="Title"></label>
+
+                <label for="description">Description :
+                <input required type="text" id="description" placeholder="Description"></label>
+
+                <label for="city">City :
+                <input required type="text" id="city" placeholder="City"></label>
+
+                <label for="price">Price :
+                <input required type="number" id="price" placeholder="Price"></label>
+
+                <label for="rating">Rating :
+                <input required type="number" id="rating" placeholder="Rating from 1 to 5" min="1" max="5"></label>
+
+                <button id="submit">Add Room</button>
+            </form>
+        </div>
+        <div class="container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -33,7 +33,7 @@ function openModal(character) {
     })
 
     modalWrapper.addEventListener('click', (e) => {
-        if(e.target === modalWrapper) modalWrapper.remove
+        if(e.target === modalWrapper) modalWrapper.remove()
     })
 }
 
