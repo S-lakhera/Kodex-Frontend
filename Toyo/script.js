@@ -37,13 +37,14 @@ const data = [
     }
 ]
 
+// Rendering all data
 const form = document.querySelector('form')
 const container = document.querySelector('.container');
 function renderItems() {
     let item = ''
 
     
-    data.forEach((room) => {
+    data.forEach((room, index) => {
         item += `
             <div class="card">
                 <div class="image">
@@ -58,8 +59,8 @@ function renderItems() {
 
                 </div>
                 <div class="btns">
-                    <button id="editBtn">Edit</button>
-                    <button>Delete</button>
+                    <button class="editBtn" id=${index}>Edit</button>
+                    <button class="deleteBtn" id="${index}" >Delete</button>
                 </div>
             </div>
         `
@@ -70,6 +71,7 @@ function renderItems() {
 
 renderItems()
 
+// Creating new data
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let newItem = {
@@ -85,5 +87,35 @@ form.addEventListener('submit', (e) => {
     data.push(newItem);
     form.reset()
     renderItems();
+})
+
+// deleting the room data
+
+// let card = document.querySelector('.card')
+container.addEventListener('click', (e) => {
+    let id = e.target.id;
+    if(!id) return;
+    
+    if(e.target.className == "deleteBtn")
+    {
+        let deleteConfirmation = confirm('Do You want to delete this Listing')
+        if(!deleteConfirmation) return
+
+        data.splice(id,1);
+        renderItems();
+    }
+
+    if(e.target.className == "editBtn")
+    {
+        let room = data[id];
+        form.childNodes[1].childNodes[1].value = room.imageUrl
+        form.childNodes[3].childNodes[1].value = room.name
+        form.childNodes[5].childNodes[1].value = room.description
+        form.childNodes[7].childNodes[1].value = room.city
+        form.childNodes[9].childNodes[1].value = room.price
+        form.childNodes[11].childNodes[1].value = room.rating
+        console.log(form);
+        
+    }
     
 })
