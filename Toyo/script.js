@@ -6,7 +6,7 @@ const hotelData = [
         "price": 1850,
         "rating": 4.2,
         "available": true,
-        "imageUrl": "https://media.istockphoto.com/id/174767532/photo/hotel-room.jpg?s=612x612&w=0&k=20&c=2BCNeFcX5PGzCxfZKXewhI_y2C9R7Jw_tzVYCXmRRCE="
+        "imageUrl": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=600"
     },
     {
         "name": "OYO Flagship 41263 Royal Stay",
@@ -15,7 +15,7 @@ const hotelData = [
         "price": 1200,
         "rating": 3.8,
         "available": false,
-        "imageUrl": "https://images.oyoroomscdn.com/uploads/hotel_image/41263/medium/1822228f0fbea072.jpg"
+        "imageUrl": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=600"
     },
     {
         "name": "Capital O 70124 The Landmark",
@@ -24,7 +24,7 @@ const hotelData = [
         "price": 2400,
         "rating": 4.5,
         "available": true,
-        "imageUrl": "https://t3.ftcdn.net/jpg/02/94/19/40/360_F_294194023_disE35GtlVLDQx4caNDaWewZI8LbxWFQ.jpg"
+        "imageUrl": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=600"
     },
     {
         "name": "OYO Home 88421 Cozy Heritage Stay",
@@ -33,23 +33,129 @@ const hotelData = [
         "price": 950,
         "rating": 4.0,
         "available": true,
-        "imageUrl": "https://thumbs.dreamstime.com/b/hotel-rooms-8146308.jpg"
+        "imageUrl": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=600"
+    },
+    {
+        "name": "Collection O 1542 Elite Residency",
+        "description": "Elegant stay featuring contemporary furniture, an infinity pool access, and premium toiletries.",
+        "city": "Indore",
+        "price": 3200,
+        "rating": 4.7,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=600"
+    },
+    {
+        "name": "OYO Flagship 8374 Green View",
+        "description": "Eco-friendly rooms surrounded by lush greenery, perfect for a relaxing weekend getaway.",
+        "city": "Gwalior",
+        "price": 1100,
+        "rating": 3.9,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=600"
+    },
+    {
+        "name": "Townhouse 982 The Urban Hub",
+        "description": "A trendy spot for digital nomads with ergonomic chairs, coffee bar, and high-speed fiber internet.",
+        "city": "Jabalpur",
+        "price": 1950,
+        "rating": 4.3,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=600"
+    },
+    {
+        "name": "Capital O 2210 Golden Palms",
+        "description": "Experience luxury with a king-sized bed, marble flooring, and 24-hour room service.",
+        "city": "Indore",
+        "price": 2800,
+        "rating": 4.6,
+        "available": false,
+        "imageUrl": "https://images.unsplash.com/photo-1591088398332-8a77d399e843?q=80&w=600"
+    },
+    {
+        "name": "OYO Home 7721 Mountain Breeze",
+        "description": "Nestled in the hills, this stay offers panoramic views and a cozy fireplace for cold nights.",
+        "city": "Pachmarhi",
+        "price": 1500,
+        "rating": 4.4,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=600"
+    },
+    {
+        "name": "Silver Key 4421 Executive Suites",
+        "description": "Specially designed for corporate travelers, located in the heart of the business district.",
+        "city": "Bhopal",
+        "price": 2100,
+        "rating": 4.1,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1578683010236-d716f9759678?q=80&w=600"
+    },
+    {
+        "name": "OYO Flagship 2012 Grand Central",
+        "description": "Simple, clean, and effective. Centrally located with easy access to malls and local markets.",
+        "city": "Sagar",
+        "price": 850,
+        "rating": 3.7,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600"
+    },
+    {
+        "name": "Collection O 5543 Blue Diamond",
+        "description": "Premium hotel with a rooftop lounge, gym, and complimentary airport shuttle service.",
+        "city": "Indore",
+        "price": 3500,
+        "rating": 4.8,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=600"
+    },
+    {
+        "name": "OYO 8821 Smart Stay",
+        "description": "Compact rooms with smart storage solutions and automated lighting for a futuristic feel.",
+        "city": "Ujjain",
+        "price": 1050,
+        "rating": 4.0,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?q=80&w=600"
+    },
+    {
+        "name": "Townhouse 332 Platinum Wing",
+        "description": "Boutique hotel experience with designer decor and a signature breakfast buffet.",
+        "city": "Bhopal",
+        "price": 2250,
+        "rating": 4.5,
+        "available": false,
+        "imageUrl": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=600"
+    },
+    {
+        "name": "OYO Home 9901 Lakeview Cottage",
+        "description": "A charming cottage by the lake, perfect for couples looking for a romantic retreat.",
+        "city": "Bhopal",
+        "price": 1700,
+        "rating": 4.3,
+        "available": true,
+        "imageUrl": "https://images.unsplash.com/photo-1444201983204-c43cbd584d93?q=80&w=600"
     }
-]
+];
+
+let reviewList = []
 
 function saveToLocalStorage(){
-    localStorage.setItem('hotelData',JSON.stringify(data))
+    localStorage.setItem('hotelData',JSON.stringify(allData))
+    localStorage.setItem('reviewList',JSON.stringify(reviewCartData))
 }
-
-let data = JSON.parse(localStorage.getItem('hotelData')) || hotelData
+let allData = JSON.parse(localStorage.getItem('hotelData')) || hotelData
+let reviewCartData = JSON.parse(localStorage.getItem('reviewList')) || reviewList
 
 // Rendering all data
 const form = document.querySelector('form')
 const formContainer = document.querySelector('.form-container')
 let isFormVisible = false;
-const container = document.querySelector('.container');
+let isCartVisible = false;
+const reviewListContainer = document.querySelector('.review-List')
+const reviewCartBtn = document.querySelector('#review-cart')
+const cardContainer = document.querySelector('.container');
 let editIndex = null
-function renderItems() {
+
+function renderItems(data,container) {
     let item = ''
 
     
@@ -70,6 +176,7 @@ function renderItems() {
                 <div class="btns">
                     <button class="editBtn" id=${index}>Edit</button>
                     <button class="deleteBtn" id="${index}" >Delete</button>
+                    <button class="addForReview" id="${index}" >Add to Review</button>
                 </div>
             </div>
         `
@@ -78,7 +185,7 @@ function renderItems() {
 
 }
 
-renderItems()
+renderItems(allData,cardContainer);
 
 // Creating new data
 form.addEventListener('submit', (e) => {
@@ -96,40 +203,40 @@ form.addEventListener('submit', (e) => {
     
 
     if(editIndex == null){
-        data.push(newItem);
+        allData.push(newItem);
     }
     else{
-        data[editIndex] = newItem
+        allData[editIndex] = newItem
         editIndex = null;
     }
     
     saveToLocalStorage()
     form.reset()
-    renderItems();
+    renderItems(allData,cardContainer);
     toggleFormVisibility();
-}) 
+})  
 
 // deleting the room data
 
 // let card = document.querySelector('.card')
-container.addEventListener('click', (e) => {
+cardContainer.addEventListener('click', (e) => {
     let id = e.target.id;
     if(!id) return;
+    let room = allData[id];
     
     if(e.target.className == "deleteBtn")
     {
         let deleteConfirmation = confirm('Do You want to delete this Listing')
         if(!deleteConfirmation) return
 
-        data.splice(id,1);
+        allData.splice(id,1);
         saveToLocalStorage()
-        renderItems();
+        renderItems(allData,cardContainer);
     }
 
     if(e.target.className == "editBtn")
-    {
-        toggleFormVisibility()
-        let room = data[id];
+        {
+            toggleFormVisibility()
         
         form.childNodes[3].childNodes[1].value = room.imageUrl
         form.childNodes[5].childNodes[1].value = room.name
@@ -137,10 +244,15 @@ container.addEventListener('click', (e) => {
         form.childNodes[9].childNodes[1].value = room.city
         form.childNodes[11].childNodes[1].value = room.price
         form.childNodes[13].childNodes[1].value = room.rating
-
+        
         editIndex = id;
     }
     
+    if(e.target.className == "addForReview")
+    {
+        reviewCartData.push(room);
+        saveToLocalStorage();
+    }
 })
 
 const addListingBtn = document.getElementById('addNew')
@@ -151,7 +263,7 @@ addListingBtn.addEventListener('click',() => {
 function toggleFormVisibility(){
     if(isFormVisible)
     {
-        formContainer.style.top = "-200%"
+        formContainer.style.top = "-400%"
     }
     else{
         formContainer.style.top = "0"
@@ -159,7 +271,72 @@ function toggleFormVisibility(){
     isFormVisible = !isFormVisible;
 }
 
+function toggleCartVisibility(){
+    if(isCartVisible)
+    {
+        reviewListContainer.style.top = "-400%"
+    }
+    else{
+        reviewListContainer.style.top = "0"
+    }
+    isCartVisible = !isCartVisible;
+}
+
 const closeBtn = document.querySelector('.close-btn')
-closeBtn.addEventListener("click", () => {
-    toggleFormVisibility()
+
+const closeCartBtn = document.querySelector('.close-cart')
+
+function renderCart(data,container){
+    let cart = ''
+
+    
+    data.forEach((room,index) => {
+        cart += `
+            <button class="close-cart">&times;</button>
+            <div class="card">
+            <div class="image">
+                    <img src="${room.imageUrl}" alt="listingImage">
+                    <div class="layer"${room.available? ">Available":"id='red'>Not available"}</div>
+                    </div>
+                    <div class="details">
+                    <h2>${room.name}</h2>
+                    <p>${room.description}</p>
+                    <h4>City : ${room.city}</h4>
+                    <h4>Charges : ₹${room.price}/Night</h4>
+                    <div class="btns">
+                    <button class="removeBtn" id="${index}" >Remove</button>
+                </div>
+                    </div>
+            </div>
+        `
+        container.innerHTML = cart
+    })
+}
+
+reviewCartBtn.addEventListener('click',() => {
+    toggleCartVisibility()
+    renderCart(reviewCartData,reviewListContainer)
 })
+
+closeBtn.addEventListener("click", () => {
+    if(isFormVisible) toggleFormVisibility();
+    
+})
+
+reviewListContainer.addEventListener('click', (e) => {
+    // Check for Close Button FIRST (it doesn't need an ID)
+    if(e.target.classList.contains('close-cart')){
+        toggleCartVisibility();
+        return; // Exit here
+    }
+
+    // Now check for Remove Button (which needs an ID)
+    let id = e.target.id;
+    if(!id) return;
+
+    if(e.target.classList.contains('removeBtn')) {
+        reviewCartData.splice(id, 1);
+        saveToLocalStorage();
+        renderCart(reviewCartData, reviewListContainer);
+    }
+});
