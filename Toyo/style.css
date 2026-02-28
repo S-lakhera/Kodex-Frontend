@@ -16,7 +16,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
+    padding: 8px 40px;
     background-color: #17171787;
     backdrop-filter: blur(5px);
     position: sticky;
@@ -31,7 +31,7 @@ nav{
 
 .brand h1{
     letter-spacing: 5px;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 800;
 }
 
@@ -75,21 +75,24 @@ button:active{
 /* Card */
 .container{
     display: flex;
-    width: 90%;
+    width: 95%;
     padding: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
+    gap: 10px;
     /* background-color: #fff; */
 }
 .card{
     width: 23%;
-    min-width: 400px;
+    min-width: 350px;
+    max-width: 500px;
     border: 1px solid #fffefe;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     position: relative;
+    margin: auto;
     margin-bottom: 40px;
 }
 
@@ -179,7 +182,7 @@ form{
     justify-content: center;
     align-items: center;
     background-color: #221f1ffe;
-    width: 50%;
+    width: 65%;
     height: 50%;
     margin: 20px auto;
     border-radius: 20px;
@@ -193,7 +196,7 @@ form label{
 form input{
     margin-left: 10px;
     padding: 10px 15px 10px 15px;
-    width: 150px;
+    width: 140px;
     border-radius: 10px;
     background-color: #313131;
     color: white;
