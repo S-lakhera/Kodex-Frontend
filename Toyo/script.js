@@ -1,4 +1,4 @@
-const data = [
+const hotelData = [
     {
         "name": "Super OYO Townhouse 1247 Hotel Skyline",
         "description": "Modern premium stay with high-speed Wi-Fi, king-sized beds, and complimentary breakfast in a prime location.",
@@ -36,6 +36,12 @@ const data = [
         "imageUrl": "https://thumbs.dreamstime.com/b/hotel-rooms-8146308.jpg"
     }
 ]
+
+function saveToLocalStorage(){
+    localStorage.setItem('hotelData',JSON.stringify(data))
+}
+
+let data = JSON.parse(localStorage.getItem('hotelData')) || hotelData
 
 // Rendering all data
 const form = document.querySelector('form')
@@ -94,12 +100,14 @@ form.addEventListener('submit', (e) => {
     }
     else{
         data[editIndex] = newItem
+        editIndex = null;
     }
     
+    saveToLocalStorage()
     form.reset()
     renderItems();
     toggleFormVisibility();
-})
+}) 
 
 // deleting the room data
 
@@ -114,6 +122,7 @@ container.addEventListener('click', (e) => {
         if(!deleteConfirmation) return
 
         data.splice(id,1);
+        saveToLocalStorage()
         renderItems();
     }
 

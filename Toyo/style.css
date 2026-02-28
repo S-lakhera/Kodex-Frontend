@@ -60,6 +60,10 @@ nav{
     transition: all ease 0.2s;
 }
 
+nav button:hover{
+    background-color: steelblue;
+}
+
 button:hover{
     background-color: #EF251F;
 }
@@ -162,7 +166,7 @@ button:active{
     position: absolute;
     padding: 5px 10px;
     font-size: 20px;
-    top: 15px;
+    top: 16px;
     right: 20px;
 }
 form{
