@@ -163,6 +163,7 @@ button:active{
     justify-content: center;
     align-items: center;
     overflow-x: auto;
+    transition: 0.5s ease;
 }
 
 .close-btn{

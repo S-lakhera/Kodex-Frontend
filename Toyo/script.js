@@ -137,6 +137,7 @@ container.addEventListener('click', (e) => {
         form.childNodes[9].childNodes[1].value = room.city
         form.childNodes[11].childNodes[1].value = room.price
         form.childNodes[13].childNodes[1].value = room.rating
+
         editIndex = id;
     }
     
