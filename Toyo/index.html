@@ -14,15 +14,17 @@
             <p>Sachche Pyar ki Nishani</p>
         </div>
         <div class="right">
-            <button>Add New Listing</button>
+            <button id="addNew">Add New Listing</button>
             <button>Login</button>
             <button>Register</button>
         </div>
     </nav>
 
     <main>
-        <div class="form">
+        <div class="form-container">
+            <div class="form">
             <form>
+                <button class="close-btn">&times;</button>
                 <label for="imageUrl">Image Url :
                 <input required type="text" id="imageUrl" placeholder="Image Url"></label>
 
@@ -35,14 +37,15 @@
                 <label for="city">City :
                 <input required type="text" id="city" placeholder="City"></label>
 
-                <label for="price">Price :
-                <input required type="number" id="price" placeholder="Price"></label>
+                <label for="price">Price+GST :
+                <input required type="number" id="price" placeholder="Booking Price"></label>
 
                 <label for="rating">Rating :
                 <input required type="number" id="rating" placeholder="Rating from 1 to 5" min="1" max="5"></label>
 
                 <button id="submit">Add Room</button>
             </form>
+        </div>
         </div>
         <div class="container"></div>
     </main>

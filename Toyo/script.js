@@ -39,7 +39,10 @@ const data = [
 
 // Rendering all data
 const form = document.querySelector('form')
+const formContainer = document.querySelector('.form-container')
+let isFormVisible = false;
 const container = document.querySelector('.container');
+let editIndex = null
 function renderItems() {
     let item = ''
 
@@ -75,18 +78,27 @@ renderItems()
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let newItem = {
-        imageUrl:form.childNodes[1].childNodes[1].value,
-        name:form.childNodes[3].childNodes[1].value,
-        description: form.childNodes[5].childNodes[1].value,
-        city:form.childNodes[7].childNodes[1].value,
-        price: form.childNodes[9].childNodes[1].value,
-        rating: form.childNodes[11].childNodes[1].value,
+        imageUrl:form.childNodes[3].childNodes[1].value,
+        name:form.childNodes[5].childNodes[1].value,
+        description: form.childNodes[7].childNodes[1].value,
+        city:form.childNodes[9].childNodes[1].value,
+        price: form.childNodes[11].childNodes[1].value,
+        rating: form.childNodes[13].childNodes[1].value,
         available: true
     }
 
-    data.push(newItem);
+    
+
+    if(editIndex == null){
+        data.push(newItem);
+    }
+    else{
+        data[editIndex] = newItem
+    }
+    
     form.reset()
     renderItems();
+    toggleFormVisibility();
 })
 
 // deleting the room data
@@ -107,15 +119,37 @@ container.addEventListener('click', (e) => {
 
     if(e.target.className == "editBtn")
     {
+        toggleFormVisibility()
         let room = data[id];
-        form.childNodes[1].childNodes[1].value = room.imageUrl
-        form.childNodes[3].childNodes[1].value = room.name
-        form.childNodes[5].childNodes[1].value = room.description
-        form.childNodes[7].childNodes[1].value = room.city
-        form.childNodes[9].childNodes[1].value = room.price
-        form.childNodes[11].childNodes[1].value = room.rating
-        console.log(form);
         
+        form.childNodes[3].childNodes[1].value = room.imageUrl
+        form.childNodes[5].childNodes[1].value = room.name
+        form.childNodes[7].childNodes[1].value = room.description
+        form.childNodes[9].childNodes[1].value = room.city
+        form.childNodes[11].childNodes[1].value = room.price
+        form.childNodes[13].childNodes[1].value = room.rating
+        editIndex = id;
     }
     
+})
+
+const addListingBtn = document.getElementById('addNew')
+addListingBtn.addEventListener('click',() => {
+    toggleFormVisibility()
+})
+
+function toggleFormVisibility(){
+    if(isFormVisible)
+    {
+        formContainer.style.top = "-200%"
+    }
+    else{
+        formContainer.style.top = "0"
+    }
+    isFormVisible = !isFormVisible;
+}
+
+const closeBtn = document.querySelector('.close-btn')
+closeBtn.addEventListener("click", () => {
+    toggleFormVisibility()
 })
