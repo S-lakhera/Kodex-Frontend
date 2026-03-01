@@ -204,10 +204,12 @@ form.addEventListener('submit', (e) => {
 
     if(editIndex == null){
         allData.push(newItem);
+        alert("Item Added Successfully...")
     }
     else{
         allData[editIndex] = newItem
         editIndex = null;
+        alert("Item Updated Successfully...")
     }
     
     saveToLocalStorage()
