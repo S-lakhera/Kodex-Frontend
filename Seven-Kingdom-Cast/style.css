@@ -23,6 +23,13 @@ nav{
     backdrop-filter: blur(1px);
 }
 
+nav h1{
+    background-color: #4e4e4e55;
+    backdrop-filter: blur(10px);
+    padding: 8px 16px;
+    border-radius: 22px;
+}
+
 .hero{
     height: 100%;
     width: 100%;
@@ -38,14 +45,17 @@ nav{
 
 .container{
     width: 100%;
-    display: grid;
+    display: flex;
     padding:  15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .container img{
-    width: 100%;
+    width: 23%;
+    max-width: 450px;
+    min-width: 250px;
     height: 500px;
     object-fit: cover; 
     object-position: top; 
@@ -80,8 +90,14 @@ nav{
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
+    to { 
+        opacity: 1;
+         transform: translateY(0); 
+    }
 }
 
 .modal-right h1 { color: #c9a063; font-family: 'serif'; }

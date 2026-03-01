@@ -146,6 +146,7 @@ let allData = JSON.parse(localStorage.getItem('hotelData')) || hotelData
 let reviewCartData = JSON.parse(localStorage.getItem('reviewList')) || reviewList
 
 // Rendering all data
+let body = document.body;
 const form = document.querySelector('form')
 const formContainer = document.querySelector('.form-container')
 let isFormVisible = false;
@@ -342,3 +343,15 @@ reviewListContainer.addEventListener('click', (e) => {
         renderCart(reviewCartData, reviewListContainer);
     }
 });
+
+let nav = document.querySelector('nav');
+body.addEventListener('wheel',(e) => {
+    
+    if(e.deltaY<0)
+    {
+        nav.style.opacity = "1"
+    }
+    else{
+        nav.style.opacity = "0"
+    }
+})

@@ -13,13 +13,18 @@ html,body {
 }
 
 nav{
+    width: 100%;
+    justify-self: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 40px;
-    background-color: #17171787;
+    background-color: #0e0e0e59;
     backdrop-filter: blur(5px);
-    position: sticky;
+    position: fixed;
+    z-index: 999;
+    transition: 0.3s all ease;
+
 }
 
 .brand{
@@ -80,6 +85,7 @@ button:active{
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
+    padding-top: 100px;
     gap: 10px;
     /* background-color: #fff; */
 }
