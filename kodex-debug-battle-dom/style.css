@@ -209,8 +209,6 @@ select option {
     list-style: none;
     display: flex;
     flex-direction: column;
-    overflow: hidden; 
-    height: calc(100vh - 340px); /* Sync with complete version height */
     
 }
 
