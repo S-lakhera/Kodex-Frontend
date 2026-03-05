@@ -27,8 +27,6 @@ nav{
     padding: 10px;
     backdrop-filter: blur(1px);
     position: fixed;
-    top: 0;
-    left: 0;
 }
 
 nav h1{
