@@ -6,7 +6,7 @@ const cols = Math.floor(container.clientWidth/45);
 
 const totalCells = rows*cols;
 
-for(let i=0; i<totalCells; i++)
+for(let i=0; i<totalCells; i++) 
 {
     let cell = document.createElement('div')
     cell.classList.add('cell')
