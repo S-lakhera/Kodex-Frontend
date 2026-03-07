@@ -8,16 +8,13 @@ const menuBar = document.querySelector('.menu-icon')
 const vNav = document.querySelector('.v-nav')
 
 menuBar.addEventListener('click', () => {
-    console.log("clicked");
     
     if(vNav.style.display === "none")
     {
-        console.log("toggle");
         
         vNav.style.display = "flex"
     }
     else{
-        console.log("toggle2");
         vNav.style.display = "none"
 
     }
