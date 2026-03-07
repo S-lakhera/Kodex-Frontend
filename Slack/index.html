@@ -15,44 +15,47 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="selection:bg-[#611f69] selection:text-white"">
     <header class="">
-        <nav class="flex max-w-7xl mx-auto items-center justify-between py-5 px-4">
-            <div class="left flex gap-12">
-                <img src="./images/Logo.png" class="w-[115px]" alt="">
+        <nav class=" flex max-w-6xl mx-auto items-center justify-between py-4 px-4">
+    <div class="left flex gap-8">
+        <img src="./images/Logo.png" class="w-[105px]" alt="">
 
-                <ul class="flex gap-12 items-center font-bold text-md">
-                    <li class="hover:text-[#611f69]">Features <i class="ri-arrow-down-s-line"></i></li>
-                    <li class="hover:text-[#611f69] cursor-pointer">Solutions <i class="ri-arrow-down-s-line"></i></li>
-                    <li class="hover:text-[#611f69] cursor-pointer">Enterprise</li>
-                    <li class="hover:text-[#611f69] cursor-pointer">Resources <i class="ri-arrow-down-s-line"></i></li>
-                    <li class="hover:text-[#611f69] cursor-pointer">Pricing</li>
-                </ul>
-            </div>
-            <div class="flex gap-2 font-bold text-lg ">
-                <button class="hover:underline cursor-pointer">Sign in</button>
-                <button class="bg-[#611f69] cursor-pointer text-white rouded px-4 py-2 hover:bg-[#4a154b]">GET
-                    STARTED</button>
-                    <div class="hidden md:flex rounded bg-purple-300 p-4 "></div>
-            </div>
-        </nav>
+        <ul class="hidden lg:flex gap-5 items-center font-semibold text-sm">
+            <li class="hover:text-[#611f69] cursor-pointer">Features <i class="ri-arrow-down-s-line"></i></li>
+            <li class="hover:text-[#611f69] cursor-pointer">Solutions <i class="ri-arrow-down-s-line"></i></li>
+            <li class="hover:text-[#611f69] cursor-pointer">Enterprise</li>
+            <li class="hover:text-[#611f69] cursor-pointer">Resources <i class="ri-arrow-down-s-line"></i></li>
+            <li class="hover:text-[#611f69] cursor-pointer">Pricing</li>
+        </ul>
+    </div>
+    <div class="flex gap-2 font-semibold text-sm ">
+        <button class="hover:underline cursor-pointer">Sign in</button>
+        <button class="bg-[#611f69] cursor-pointer text-white rounded px-3 py-1.5 hover:bg-[#4a154b]">GET
+            STARTED</button>
+        <div class="flex lg:hidden rounded bg-purple-300 p-4 "></div>
+    </div>
+    </nav>
     </header>
     <main>
-        <section class="flex flex-col items-center w-full py-19 text-black gap-8">
-            <div class="hero-text text-5xl pt-6 font-semibold leading-tight tracking-tight">
+        <section class="flex flex-col items-center w-full py-8 text-black gap-8">
+            <div class="hero-text text-5xl pt-6 font-semibold leading-tight tracking-tight ">
                 <h1>Slack is your team's collective 🧠 brain.</h1>
             </div>
-            <div class="text-xl">
-                <p class="text-gray-700">Move faster and work smarter with <br>
-                    people, apps, and AI at your side.
+            <div class="text-xl >
+                <p class=" text-gray-700">Move faster and work smarter with <br>
+                people, apps, and AI at your side.
                 </p>
             </div>
             <div class="cta-btns flex text-xl gap-6 font-semibold">
-                <button class="bg-[#611f69] cursor-pointer text-white rouded px-6 py-3 hover:bg-[#4a154b]">GET STARTED</button>
-                <button class="border px-6 py-3 border-[#611f69] hover:border-2 ease">FIND YOUR PLAN <i class="ri-arrow-right-line align-middle"></i></button>
+                <button class="bg-[#611f69] cursor-pointer text-white rounded px-6 py-3 hover:bg-[#4a154b]">GET
+                    STARTED</button>
+                <button
+                    class="border px-6 py-3 border-[#611f69] transition duration-500 hover:border-2 ease text-[#611f69]">FIND
+                    YOUR PLAN <i class="ri-arrow-right-line align-middle"></i></button>
             </div>
-            <div class="flex justify-evenly w-full grayscale py-10 mt-20">
-                <p class="text-gray-700">Trusted by top teams</p>
+            <div class="flex justify-evenly items-center w-full grayscale py-10 mt-15">
+                <p class="text-gray-700 text-xs font-bold tracking-widest uppercase">Trusted by top teams</p>
                 <img src="./images/gm.png" alt="GM" class="h-7 object-contain">
                 <img src="./images/openai.png" alt="" class="h-7 object-contain">
                 <img src="./images/target.png" alt="" class="h-7 object-contain">
@@ -61,8 +64,478 @@
                 <img src="./images/stripe.png" alt="" class="h-7 object-contain">
             </div>
         </section>
+
+        <section class="flex flex-col  w-full h-[100vh] items-center">
+            <div class="text-[#611f69] py-4 font-semibold text-lg">Plan Launches</div>
+            <div class="flex w-3/5 p-3 justify-center">
+                <img src="./images/C1.jpg" class="w-9/10" alt="plan launches">
+            </div>
+            <div class="flex gap-4 pt-4">
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+            </div>
+        </section>
+
+        <section class="bg-[#4a154b] text-white py-20 w-full flex flex-col justify-center ">
+            <section class="w-4/5 h-4/5 p-4 mx-auto flex gap-15 items-center">
+                <div class="left h-full w-1/2 justify-center content-center items-center ">
+                    <div class="">
+                        <h1 class="w-7/8 text-5xl leading-15 font-semibold">Reimagine what’s possible with AI and
+                            agents.</h1>
+                    </div>
+                    <div>
+                        <p class="w-7/8 pt-5 text-lg">AI in Slack doesn’t make you think, it helps you do. It summarizes
+                            and searches based on
+                            actual conversations, and with it, makes every app and agent more helpful and contextually
+                            aware than ever.</p>
+                    </div>
+                </div>
+
+                <div class="right p-3 w-1/2">
+                    <img src="./images/C1.jpg" class="" alt="">
+                </div>
+            </section>
+            <div class="flex gap-4 pt-18  w-1/2 justify-center max-w-6xl mx-auto ">
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-white"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-white/50 hover:bg-white"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-white/50 hover:bg-white"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-white/50 hover:bg-white"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-white/50 hover:bg-white"></div>
+            </div>
+        </section>
+
+        <section class=" w-full py-10 px-7 flex-col justify-between flex items-center text-[#364153]">
+            <div class="flex flex-col w-full items-center justify-center text-center">
+                <h3 class="py-2 font-semibold text-black">KNOWLEDGE</h3>
+                <h1 class="text-5xl w-1/2 font-semibold text-black self-center">Give everyone instant context.</h1>
+                <p class="py-2 text-lg w-3/5">Get access to every file, decision, and coverstaion, so you can build on
+                    past work instead of recreating it.</p>
+            </div>
+
+            <div class="flex py-10 justify-between items-center content-center">
+                <div class="left w-1/2 text-left">
+                    <h1 class="w-4/5 font-semibold text-[#9602c7] text-4xl">Meet Slackbot: Your personal agent for work.
+                    </h1>
+                    <p class="py-5 w-4/5 text-lg">Slackbot isn’t just any AI. It’s AI that knows your team inside and
+                        out. It adapts to your style, finds what you need, and helps work get done faster.</p>
+                    <a href="#" class="text-[#2a47e6] hover:underline font-semibold">Learn more about Slackbot
+                        &rarr;</a>
+                </div>
+                <div class="right w-1/2">
+                    <img src="./images/C5.jpg" class="w-9/10" alt="">
+                </div>
+            </div>
+
+            <div class="w-full mx-10 my-5 flex justify-center lg:gap-50 text-black text-2xl font-semibold">
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>One search to rule them all.</h2>
+                </div>
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>Bring CRM data to the conversation.</h2>
+                </div>
+            </div>
+
+            <div class=" my-5 pt-20 w-full mx-auto text-center">
+                <h1 class="text-7xl font-semibold text-[#9602c7]">97 min</h1>
+                <p>Average time users can save weekly with AI in Slack<sup>1</sup></p>
+            </div>
+        </section>
+
+        <section class=" w-full py-10 px-7 flex-col justify-between flex items-center text-[#364153]">
+            <div class="flex flex-col w-full items-center justify-center text-center">
+                <h3 class="py-2 font-semibold text-black">PEOPLE</h3>
+                <h1 class="text-5xl w-1/2 font-semibold text-black self-center">Let your people connect like people.
+                </h1>
+                <p class="py-2 text-lg w-3/5">Slack’s conversational UI makes collaborating more approachable, whether
+                    you're working with a colleague or an agent.</p>
+            </div>
+
+            <div class="flex py-10 justify-between items-center content-center">
+                <div class="left w-1/2 rounded">
+                    <img src="./images/C4.jpg" class="px-6 rounded w-9/10" alt="">
+                </div>
+                <div class="right w-1/2 text-left ml-10">
+                    <h1 class="w-4/5 font-semibold text-[#9602c7] text-4xl">Meet Slackbot: Your personal agent for work.
+                    </h1>
+                    <p class="py-5 w-4/5 text-lg">Slackbot isn’t just any AI. It’s AI that knows your team inside and
+                        out. It adapts to your style, finds what you need, and helps work get done faster.</p>
+                    <a href="#" class="text-[#2a47e6] hover:underline font-semibold">Learn more about Slackbot
+                        &rarr;</a>
+                </div>
+
+            </div>
+
+            <div class="w-full mx-10 my-5 flex justify-center gap-30 lg:gap-30 text-black text-2xl font-semibold">
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>When talking is easier than typing...</h2>
+                </div>
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>Bring conversations out of the inbox.</h2>
+                </div>
+            </div>
+
+            <div class=" my-5 py-15 w-full mx-auto text-center">
+                <h1 class="text-2xl font-semibold text-black">ANTHROPIC</h1>
+                <p class="py-7 italic text-2xl w-4/5 mx-auto">"Slack has been essential to our growth, our speed, and
+                    our ability to stay aligned as we scale"</p>
+                <p><b class="text-black">Kate Jenson,</b> Head of Americas, Anthropic</p>
+            </div>
+        </section>
+
+        <section class=" w-full py-10 px-7 flex-col justify-between flex items-center text-[#364153]">
+            <div class="flex flex-col w-full items-center justify-center text-center">
+                <h3 class="py-2 font-semibold text-black">PROCESS</h3>
+                <h1 class="text-5xl w-2/3 mx-auto font-semibold text-black self-center">Manage all your work from one
+                    place.</h1>
+                <p class="py-2 text-lg w-3/5">Automate daily stand-ups, project updates, and approvals so your team can
+                    focus on growth instead of guesswork.</p>
+            </div>
+
+            <div class="flex py-10 justify-between items-center content-center">
+                <div class="left w-1/2 text-left">
+                    <h1 class="w-4/5 font-semibold text-[#9602c7] text-4xl">Anyone can automate in Slack.</h1>
+                    <p class="py-5 w-4/5 text-lg">By click or by code, Slack makes it easy for anyone to build
+                        time-saving automations of their own.</p>
+                    <a href="#" class="text-[#2a47e6] hover:underline font-semibold ">Learn about workflows &rarr;</a>
+                </div>
+                <div class="right w-1/2  p-5">
+                    <img src="./images/C3.jpg" class="w-9/10" alt="">
+                </div>
+            </div>
+
+            <div class="w-full mx-10 my-5 flex justify-center lg:gap-50 text-black text-2xl font-semibold">
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>Manage projects and tasks.</h2>
+                </div>
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>A simpler way to get started.</h2>
+                </div>
+            </div>
+
+            <div class=" my-5 pt-20 w-full mx-auto text-center">
+                <h1 class="text-7xl font-semibold text-[#9602c7]">35%</h1>
+                <p>Increase in time saved due to automations for Slack users<sup>2</sup></p>
+            </div>
+        </section>
+
+        <section class=" w-full py-10 px-7 flex-col justify-between flex items-center text-[#364153]">
+            <div class="flex flex-col w-full items-center justify-center text-center">
+                <h3 class="py-2 font-semibold text-black">PLATFORM</h3>
+                <h1 class="text-5xl w-2/3 font-semibold text-black self-center">Secure. Scalable. Silo-free.</h1>
+                <p class="w-1/2 text-lg mx-auto">Our flexible, open platform is purpose-built for bringing the best
+                    agents and AI to every business, and can be tailored to fit however your teams work best.</p>
+            </div>
+
+            <div class="flex py-10 justify-between items-center content-center">
+                <div class="left w-1/2 rounded">
+                    <img src="./images/C2.jpg" class="px-6 rounded w-9/10" alt="">
+                </div>
+                <div class="right w-1/2 text-left ml-10">
+                    <h1 class="w-4/5 font-semibold text-[#9602c7] text-4xl">From Atlassian to Zoom.</h1>
+                    <p class="py-5 w-4/5 text-lg">By click or by code, Slack makes it easy for anyone to build
+                        time-saving automations of their own.</p>
+                    <a href="#" class="text-[#2a47e6] hover:underline font-semibold">See all integrations &rarr;</a>
+                </div>
+
+            </div>
+
+            <div class="w-full mx-10 my-5 flex justify-center gap-30 lg:gap-30 text-black text-2xl font-semibold">
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>When talking is easier than typing...</h2>
+                </div>
+                <div class="border-l-5 pl-5 cursor-pointer border-purple-300 hover:border-[#9602c7]">
+                    <h2>Work without worry.</h2>
+                </div>
+            </div>
+
+            <div class=" my-5 py-15 w-full mx-auto text-center">
+                <h1 class="text-2xl font-semibold text-black">
+                    <i class="ri-triangle-fill "></i>
+                    VERCEL
+
+                </h1>
+                <p class="py-4 italic text-2xl w-4/5 mx-auto">"Work starts in conversation. That’s why we see Slack as
+                    the natural place to build our agents."</p>
+                <p><b class="text-black">Guillermo Rauch,</b> CEO, Vercel</p>
+            </div>
+        </section>
+
+        <section class="w-full px-10 py-5">
+            <div class="text-center">
+                <h1 class="text-5xl font-semibold tracking-tight w-3/4 text-black mx-auto">The most innovative companies
+                    run their business in Slack.</h1>
+            </div>
+            <div class="w-9/10 rounded-4xl mx-auto py-10">
+                <img src="./images/P1.jpg" class="w-8/10 mx-auto rounded-4xl" alt="">
+            </div>
+            <div class="flex gap-4 pt-4 w-full justify-center mx-auto">
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+            </div>
+            <div class="cta-btns flex text-lg py-20 justify-center gap-6 font-semibold">
+                <button class="bg-[#611f69] cursor-pointer text-white rounded px-6 py-3 hover:bg-[#4a154b]">GET
+                    STARTED</button>
+                <button
+                    class="border px-6 py-3 border-[#611f69] transition duration-500 hover:border-2 ease text-[#611f69] uppercase">Request
+                    a demo<i class="ri-arrow-right-line align-middle"></i></button>
+            </div>
+        </section>
+
+        <section class="bg-[#4a154b] w-full px-30 py-10 flex flex-col gap-y-25">
+            <div class="w-full text-center text-white text-4xl font-semibold">
+                <h1 class="tracking-tight">We're in the business of growing businesses.</h1>
+            </div>
+            <div class="flex w-full gap-30 justify-between text-white">
+                <div class="">
+                    <div class="text-5xl text-center text-purple-300 font-semibold p-2 ">90%</div>
+                    <div class="text-center text-white font-semibold tracking-tight">
+                        <p>of users say Slack helps then stay more connected<sup>1</sup></p>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="text-center text-5xl text-purple-300 font-semibold p-2 ">89%</div>
+                    <div class="text-center text-white font-semibold tracking-tight">
+                        <p>of users say Slack improves communication<sup>5</sup></p>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="text-5xl text-purple-300 text-center font-semibold p-2 ">36%</div>
+                    <div class="text-center text-white font-semibold tracking-tight">
+                        <p>increase in employee engagement<sup>5</sup></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full px-20 py-10 mx-auto text-black ">
+            <div class="w-3/4 mx-auto justify-center flex ">
+                <h1 class="font-bold tracking-tight text-3xl">Millions of people love to work in Slack.</h1>
+            </div>
+
+            <div class="flex w-full mx-auto px-15 justify-between items-center pt-25 pb-10 border-b">
+                <div class="">
+                    <div class="text-5xl text-center font-semibold p-2 ">700M</div>
+                    <div class="text-center font-semibold tracking-tight text-gray-900">
+                        <p>Messages sent daily<sup>1</sup></p>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="text-center text-5xl font-semibold p-2 ">1.7M</div>
+                    <div class="text-center font-semibold tracking-tight text-gray-900">
+                        <p>Apps actively used each week1<sup>1</sup></p>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="text-5xl text-center font-semibold p-2 ">4M</div>
+                    <div class="text-center  font-semibold tracking-tight text-gray-900">
+                        <p>Slack connect users working <br> directly with external teams <br> each week<sup>1</sup></p>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div class="text-5xl text-center font-semibold p-2 ">3M</div>
+                    <div class="text-center font-semibold tracking-tight text-gray-900">
+                        <p>Daily Workflows<sup>1</sup></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex py-10  w-full gap-15">
+                <div class="h-full items-center my-auto w-3/5">
+                    <h1 class="font-semibold text-2xl ">Don't just take our word for it.</h1>
+                    <p class="text-lg">Slack is a leader in over 314 G2 market reports.<sup>6</sup></p>
+                </div>
+                <div class="w-full">
+                    <div class="flex w-1/5 gap-10 py-4">
+                        <img src="./images/badge1.png" alt="">
+                        <img src="./images/badge3.png" alt="">
+                    </div>
+                    <div class="flex w-1/5 gap-10 py-4">
+                        <img src="./images/badge2.png" alt="">
+                        <img src="./images/badge1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full p-10">
+                <div class="w-2/3 flex justify-center items-center mx-auto py-4">
+                    <h1 class="text-4xl font-bold">Your Slack deep dive starts here.</h1>
+                </div>
+                <div
+                    class="card flex flex-col w-3/8 p-4 my-5  mx-auto shadow-[0_10px_30px_rgb(0,0,0,0.22)] hover:shadow-[0_10px_30px_rgb(0,0,0,0.42)] cursor-pointer transition-shadow duration-500">
+                    <div>
+                        <img src="./images/faq1.png" alt="">
+                    </div>
+                    <div class="pb-10">
+                        <p class="font-semibold pt-4">EVENT</p>
+                        <h2 class="text-2xl pt-2 font-semibold rounded-lg ">Ready for the future of AI in Slack?</h2>
+                    </div>
+                    <div class="pt-8 pr-5 flex relative text-[#2a47e6] justify-between group">
+                        <p class="font-semibold text-lg ">Watch on demand </p>
+                        <i
+                            class="ri-arrow-right-line text-lg font-semibold  group-hover:translate-x-2 transition-transform"></i>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 py-8 my-3  w-full mx-auto justify-center">
+                    <div class="h-3 w-3 rounded-full cursor-pointer bg-[#4a154b]"></div>
+                    <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                    <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                    <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
+                </div>
+
+            </div>
+        </section>
+        <section class="w-full px-7">
+            <div class="my-15 w-full flex justify-between font-semibold border-y-1 border-gray-400 p-2">
+                <p>Sources</p>
+                <i class="ri-arrow-down-s-line cursor-pointer"></i>
+            </div>
+        </section>
+
+        <section class="w-full flex flex-col justify-center items-center text-white bg-[#4a154b] pt-15">
+            <div class="w-1/2 text-center">
+                <h1 class="text-6xl leading-18  font-bold">See all you can accomplish with Slack</h1>
+            </div>
+
+            <div class="cta-btns flex text-sm gap-6 font-bold tracking-widest py-8 ">
+                <button class="bg-white cursor-pointer text-[#4a154b] rounded px-10 py-3">GET
+                    STARTED</button>
+                <button
+                    class="border px-10 py-3 border-white transition-bprder cursor-pointer duration-500 hover:border-2 ease ">Request
+                    a demo<i class="ri-arrow-right-line align-middle"></i></button>
+            </div>
+
+            <div class="bg-[#4a154b] leading-[0] w-full text-white pt-5">
+                <svg class="w-full h-16 md:h-24 text-white" viewBox="0 0 1440 80" fill="currentColor"
+                    preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,80 C 480,0 960,0 1440,80 V 80 H 0 Z"></path>
+                </svg>
+            </div>
+        </section>
+
     </main>
-    <footer></footer>
+    <footer class="w-full p-5 pb-0">
+        <section class="flex justify-between text-xl p-2">
+            <div class="left flex items-center gap-2 font-bold">
+                <i class="ri-global-line "></i>
+                <h4>
+                    Change Region
+                </h4>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+
+            <div class="right gap-8 flex ">
+                <a href="#"><i class="ri-twitter-x-fill hover:text-blue-600"></i></a>
+                <a href="#"><i class="ri-instagram-fill hover:text-red-500"></i></a>
+                <a href="#"><i class="ri-facebook-fill hover:text-blue-800"></i></a>
+                <a href="#"><i class="ri-linkedin-fill hover:text-blue-700"></i></a>
+                <a href="#"><i class="ri-youtube-fill hover:text-red-600"></i></a>
+            </div>
+        </section>
+
+        <section class="text-gray-600 max-w-6xl mx-auto my-10 items-center pt-20">
+            <div class="grid grid-cols-6 gap-8 justify-center ">
+                <div>
+                    <p class="text-black font-bold uppercase text-sm py-4">Product</p>
+                    <ul class=" gap-2 flex flex-col">
+                        <li>Watch Demo</li>
+                        <li>Pricing</li>
+                        <li>Paid vs Free</li>
+                        <li>Accessbility</li>
+                        <li>Featured releases</li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <p class="text-black font-bold uppercase text-sm py-4">Why Slack?</p>
+                    <ul class=" gap-2 flex flex-col">
+                        <li>Enterprise</li>
+                        <li>Small Business</li>
+                        <li>Productivity</li>
+                        <li>Task Management</li>
+                        <li>Scale</li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <p class="text-black font-bold uppercase text-sm py-4">Features</p>
+                    <ul class=" gap-2 flex flex-col">
+                        <li>Channels</li>
+                        <li>Slack Connect</li>
+                        <li>Workflow Builder</li>
+                        <li>Messaging</li>
+                        <li>Huddles</li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <p class="text-black font-bold uppercase text-sm py-4">Solution</p>
+                    <ul class=" gap-2 flex flex-col">
+                        <li>Engineering</li>
+                        <li>IT</li>
+                        <li>Customer Service</li>
+                        <li>Sales</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="text-black font-bold uppercase text-sm py-4">Resources</p>
+                    <ul class=" gap-2 flex flex-col">
+                        <li>Help Center</li>
+                        <li>Partners</li>
+                        <li>Community</li>
+                        <li>Events</li>
+                        <li>Developers</li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <p class="text-black font-bold uppercase text-sm py-4">Company</p>
+                    <ul class=" gap-2 flex flex-col">
+                        <li>About Us</li>
+                        <li>News</li>
+                        <li>Media Kit</li>
+                        <li>Careers</li>
+                        <li>Sitemap</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="w-full mt-10 pt-6 flex">
+                <div class="left flex flex-col gap-4 cursor-pointer">
+                    <div class="">
+                        <img src="./images/logo.svg" class="w-11" alt="">
+                    </div>
+                    <div class="text-[#2a47e6] text-sm hover:underline">
+                        <p>Download Slack <i class="ri-download-cloud-line"></i></p>
+                    </div>
+                    <ul class="flex text-gray-600 gap-10 font-semibold ">
+                        <li class="hover:underline">Privacy</li>
+                        <li class="hover:underline">Terms</li>
+                        <li class="hover:underline">Cookie Prefernces</li>
+                    </ul>
+                </div>
+                <div class="right text-right flex flex-col pt-16 justify-end w-full">
+                    <p class="flex justify-end items-center gap-2 hover:underline">Your Privacy Choices <span><img
+                                src="./images/ccpa.svg" class="justify-self-end" alt=""></span></p>
+                    <p>©2026 Slack Technologies, LLC, a Salesforce company. All rights reserved. <br> Various trademarks
+                        held by their respective owners.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
