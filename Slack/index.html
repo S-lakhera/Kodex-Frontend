@@ -27,35 +27,144 @@
 </style>
 
 <body class="selection:bg-[#611f69] selection:text-white"">
-    <header class=" fixed w-full transition-all duration-300 shadow-md hover:shadow-xl z-99 bg-white/20
-    backdrop-blur-md ">
-        <nav class=" flex max-w-6xl mx-auto items-center justify-between py-4 px-4">
-    <div class="left flex gap-8">
-        <img src="./images/Logo.png" class="w-[105px]" alt="">
+    <header class=" fixed w-full transition-all duration-500 shadow-md hover:shadow-xl z-99 bg-white/40
+    backdrop-blur-md rounded-full mt-1.5 ">
+        <nav class=" flex max-w-6xl mx-auto items-center justify-between py-2 px-4">
+    <div class="left flex gap-8 items-center">
+        <img src="./images/Logo.png" class="w-auto h-9" alt="">
 
-        <ul class="hidden md:flex gap-5 items-center font-semibold text-sm">
-            <li class="hover:text-[#611f69] cursor-pointer">Features <i class="ri-arrow-down-s-line"></i></li>
-            <li class="hover:text-[#611f69] cursor-pointer">Solutions <i class="ri-arrow-down-s-line"></i></li>
+        <ul class="hidden lg:flex gap-5 items-center font-semibold text-sm">
+            <li class="group relative py-2 hover:text-[#611f69] cursor-pointer">
+                <div class="nav-link ">Features <i
+                        class="ri-arrow-down-s-line align-middle transition-transform duration-300"></i></div>
+
+                <div
+                    class="mega-menu absolute top-12 left-1/2 -translate-x-1/5 w-[500px] bg-white shadow-2xl rounded-xl p-6 opacity-0 invisible translate-y-2 transition-all duration-300 z-50 border border-gray-100">
+                    <div class="grid grid-cols-2 gap-8 text-black">
+                        <div>
+                            <h4 class="font-bold text-gray-600 uppercase text-[10px] mb-4 tracking-widest">Collaborate
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Channels</p>
+                                    <p class="text-xs text-gray-500 font-normal">Organize teams and projects</p>
+                                </li>
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Slack Connect</p>
+                                    <p class="text-xs text-gray-500 font-normal">Work with external partners</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-600 uppercase text-[10px] mb-4 tracking-widest">Innovate</h4>
+                            <ul class="space-y-4">
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Automations</p>
+                                    <p class="text-xs text-gray-500 font-normal">Streamline your workflows</p>
+                                </li>
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">AI in Slack</p>
+                                    <p class="text-xs text-gray-500 font-normal">Search and summarize faster</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="group relative py-4 hover:text-[#611f69] cursor-pointer">
+                <span class="nav-link">Solutions <i
+                        class="ri-arrow-down-s-line align-middle transition-transform duration-300 group-hover:rotate-180"></i></span>
+
+                <div
+                    class="mega-menu absolute top-full left-1/2 -translate-x-1/5 w-[500px] bg-white shadow-2xl rounded-xl p-6 opacity-0 invisible translate-y-2 transition-all duration-300 z-50 border border-gray-100">
+                    <div class="grid grid-cols-2 gap-8 text-black">
+                        <div>
+                            <h4 class="font-bold text-gray-600 uppercase text-[10px] mb-4 tracking-widest">By Department
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Engineering</p>
+                                    <p class="text-xs text-gray-500 font-normal">Ship code faster with integrated tools
+                                    </p>
+                                </li>
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Marketing</p>
+                                    <p class="text-xs text-gray-500 font-normal">Launch campaigns with precision</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-600 uppercase text-[10px] mb-4 tracking-widest">By Industry
+                            </h4>
+                            <ul class="space-y-4">
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Technology</p>
+                                    <p class="text-xs text-gray-500 font-normal">Scale your startup with AI</p>
+                                </li>
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Retail</p>
+                                    <p class="text-xs text-gray-500 font-normal">Connect your storefront to HQ</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li class="hover:text-[#611f69] cursor-pointer">Enterprise</li>
-            <li class="hover:text-[#611f69] cursor-pointer">Resources <i class="ri-arrow-down-s-line"></i></li>
+            <li class="group relative py-4 hover:text-[#611f69] cursor-pointer">
+                <span class="nav-link">Resources <i
+                        class="ri-arrow-down-s-line align-middle transition-transform duration-300 group-hover:rotate-180"></i></span>
+
+                <div
+                    class="mega-menu absolute top-full left-1/2 -translate-x-1/4 w-[500px] bg-white shadow-2xl rounded-xl p-6 opacity-0 invisible translate-y-2 transition-all duration-300 z-50 border border-gray-100">
+                    <div class="grid grid-cols-2 gap-8 text-black">
+                        <div>
+                            <h4 class="font-bold text-gray-600 uppercase text-[10px] mb-4 tracking-widest">Learning</h4>
+                            <ul class="space-y-4">
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Help Center</p>
+                                    <p class="text-xs text-gray-500 font-normal">Tutorials and documentation</p>
+                                </li>
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Slack Certified</p>
+                                    <p class="text-xs text-gray-500 font-normal">Become a Slack power user</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-600 uppercase text-[10px] mb-4 tracking-widest">Company</h4>
+                            <ul class="space-y-4">
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">Events</p>
+                                    <p class="text-xs text-gray-500 font-normal">Join webinars and summits</p>
+                                </li>
+                                <li class="hover:bg-purple-100 p-2 rounded-lg">
+                                    <p class="font-bold text-sm">News</p>
+                                    <p class="text-xs text-gray-500 font-normal">The latest from the Slack blog</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
             <li class="hover:text-[#611f69] cursor-pointer">Pricing</li>
         </ul>
     </div>
     <div class="flex gap-2 font-semibold text-sm ">
         <button class="hidden md:block hover:underline cursor-pointer">Sign in</button>
-        <button class="bg-[#611f69] cursor-pointer text-white rounded px-3 py-1.5 hover:bg-[#4a154b]">GET
+        <button id="join-btn" class="bg-[#611f69] cursor-pointer text-white rounded px-3 py-1.5 hover:bg-[#4a154b]">GET
             STARTED</button>
         <div class="flex md:hidden rounded p-1 ">
-            <i class="menu-icon ri-menu-fill text-xl"></i>
-        </div>
-        <div class="v-nav hidden absolute top-17 right-1 p-3 gap-2 bg-white z-999 ">
-            <ul>
-                <li class="hover:text-[#611f69] cursor-pointer">Features <i class="ri-arrow-down-s-line"></i></li>
-                <li class="hover:text-[#611f69] cursor-pointer">Solutions <i class="ri-arrow-down-s-line"></i></li>
-                <li class="hover:text-[#611f69] cursor-pointer">Enterprise</li>
-                <li class="hover:text-[#611f69] cursor-pointer">Resources <i class="ri-arrow-down-s-line"></i></li>
-                <li class="hover:text-[#611f69] cursor-pointer">Pricing</li>
-            </ul>
+            <i class="menu-icon ri-menu-fill text-xl cursor-pointer"></i>
+            <div class="v-nav hidden absolute top-17 right-1 p-3 gap-2 bg-white z-999 ">
+                <ul>
+                    <li class="hover:text-[#611f69] cursor-pointer">Features <i class="ri-arrow-down-s-line"></i></li>
+                    <li class="hover:text-[#611f69] cursor-pointer">Solutions <i class="ri-arrow-down-s-line"></i></li>
+                    <li class="hover:text-[#611f69] cursor-pointer">Enterprise</li>
+                    <li class="hover:text-[#611f69] cursor-pointer">Resources <i class="ri-arrow-down-s-line"></i></li>
+                    <li class="hover:text-[#611f69] cursor-pointer">Pricing</li>
+                </ul>
+            </div>
         </div>
     </div>
     </nav>
@@ -71,7 +180,8 @@
                 </p>
             </div>
             <div class="cta-btns flex text-xl gap-6 font-semibold">
-                <button class="bg-[#611f69] cursor-pointer text-white rounded px-6 py-3 hover:bg-[#4a154b]">GET
+                <button id="join-btn"
+                    class="bg-[#611f69] cursor-pointer text-white rounded px-6 py-3 hover:bg-[#4a154b]">GET
                     STARTED</button>
                 <button
                     class="border px-6 py-3 border-[#611f69] cursor-pointer transition-all duration-300 hover:border-2 ease text-[#611f69]">FIND
@@ -323,7 +433,8 @@
                 <div class="h-3 w-3 rounded-full cursor-pointer bg-[#dac6e1] hover:bg-[#4a154b]"></div>
             </div>
             <div class="cta-btns flex text-lg py-20 justify-center gap-6 font-semibold">
-                <button class="bg-[#611f69] cursor-pointer text-white rounded px-6 py-3 hover:bg-[#4a154b]">GET
+                <button id="join-btn"
+                    class="bg-[#611f69] cursor-pointer text-white rounded px-6 py-3 hover:bg-[#4a154b]">GET
                     STARTED</button>
                 <button
                     class="border px-6 py-3 border-[#611f69] transition duration-500 hover:border-2 ease text-[#611f69] uppercase">Request
@@ -436,9 +547,18 @@
             </div>
         </section>
         <section class="w-full px-7">
-            <div class="my-15 w-full flex justify-between font-semibold border-y-1 border-gray-400 p-2">
+            <div id="sources-header"
+                class="my-15 w-full flex justify-between font-semibold border-y-1 border-gray-400 p-2">
                 <p>Sources</p>
-                <i class="ri-arrow-down-s-line cursor-pointer"></i>
+                <i id="sources-icon" class="ri-arrow-down-s-line cursor-pointer"></i>
+            </div>
+
+            <div id="sources-content" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-2">
+                <ul class="text-sm text-gray-600 pb-10 list-decimal pl-5 space-y-2">
+                    <li>Weighted average of 2023 Slack user surveys.</li>
+                    <li>Results based on a 2024 independent research study of Slack customers.</li>
+                    <li>"Future of AI" report by Salesforce, March 2026.</li>
+                </ul>
             </div>
         </section>
 
@@ -448,7 +568,7 @@
             </div>
 
             <div class="cta-btns flex text-sm gap-6 font-bold tracking-widest py-8 ">
-                <button class="bg-white cursor-pointer text-[#4a154b] rounded px-10 py-3">GET
+                <button id="join-btn" class="bg-white cursor-pointer text-[#4a154b] rounded px-10 py-3">GET
                     STARTED</button>
                 <button
                     class="border px-10 py-3 border-white transition-bprder cursor-pointer duration-500 hover:border-2 ease ">Request
@@ -580,6 +700,25 @@
             </div>
         </section>
     </footer>
+
+    <div id="join-modal"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm z-500 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        <div
+            class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform scale-100 transition-transform duration-300">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-[#4a154b]">Ready to join Slack?</h2>
+                <button id="close-modal" class="text-gray-500 hover:text-black text-2xl cursor-pointer"><i
+                        class="ri-close-line"></i></button>
+            </div>
+            <p class="text-gray-600 mb-6">Enter your email to start collaborating with your team today.</p>
+            <input type="email" placeholder="name@work-email.com"
+                class="w-full border-2 border-gray-200 rounded-lg px-4 py-3 mb-4 focus:border-[#4a154b] outline-none">
+            <button
+                class="w-full bg-[#611f69] text-white font-bold py-3 rounded-lg hover:bg-[#4a154b] transition-colors">
+                Continue
+            </button>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
