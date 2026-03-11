@@ -105,11 +105,11 @@ p{
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 99;
+    z-index: 999;
     background: radial-gradient(
     circle at center,
-    transparent 100px,
-    rgba(0,0,0,0.4) 200px,
-    rgba(0, 0, 0, 0.95) 300px
+    transparent 70px,
+    rgba(0,0,0,0.4) 150px,
+    rgba(0, 0, 0, 0.95) 210px
   );
 }

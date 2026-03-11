@@ -8,8 +8,8 @@ document.addEventListener('mousemove', (event) => {
     spotlight.style.background = `
     radial-gradient(
     circle at ${x}px ${y}px,
-    transparent 100px,
-    rgba(0,0,0,0.4) 200px,
-    rgba(0, 0, 0, 0.96) 300px
+    transparent 70px,
+    rgba(0,0,0,0.4) 150px,
+    rgba(0, 0, 0, 0.95) 210px
   )`
 }) 
