@@ -19,7 +19,7 @@ const navItems = document.querySelectorAll('.group.relative')
 navItems.forEach((item) => {
     let menu = item.querySelector('.mega-menu')
     let icon = item.querySelector('i')
-    
+
     item.addEventListener('mouseenter', () => {
         menu.classList.remove('opacity-0','invisible','translate-y-2')
         
@@ -69,15 +69,11 @@ sourcesHeader.addEventListener('click', () =>{
 
 menuBar.addEventListener('click', () => {
     
-    if(vNav.style.display === "none")
-    {
-        
-        vNav.style.display = "flex"
-    }
-    else{
-        vNav.style.display = "none"
+    vNav.classList.toggle('hidden')
+    vNav.classList.toggle('flex')
 
-    }
+    menuBar.classList.toggle('ri-menu-fill');
+    menuBar.classList.toggle('ri-close-line');
 })
 
 dots[0].classList.add("active")
@@ -116,8 +112,6 @@ rDots.forEach((dot) => {
 
 
 body.addEventListener('wheel', (e) => {
-    console.log(window.pageYOffset);
-
     if(e.deltaY>-0 && window.pageYOffset>340)
     {
         header.style.transform = "translateY(-130%)"
